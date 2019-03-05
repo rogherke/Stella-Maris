@@ -1,0 +1,409 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Serif TC', serif;
+}    
+nav{
+    width: 100%;
+    z-index:2;
+    top: 0;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.87) ; 
+    
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-icon{
+    width: 50%;
+    
+}
+.logo-icon img{
+    height: 50px;
+    margin: 4%;
+    object-fit: cover;
+}
+.to-eat, .content, .aboutus, .shopping-cart {
+    height: 3vh;
+    width: 15%;
+}
+.to-eat a, .content a, .aboutus a, .shopping-cart a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration:none;
+}
+.to-eat img, .content img, .aboutus img, .shopping-cart img{
+    height: 2vh;
+    object-fit: cover;
+    margin-right:4%
+}
+.essential{
+    width: 100%;
+    height: 850px;
+    background:white;
+    display: flex;
+    margin: 6rem 0;
+}
+.store-brand{
+    width: 22%;
+    background:white;
+}
+.store-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:76vh;
+}
+.store-logo img{
+    width: 180%;
+    object-fit: cover;
+}
+.slide-Show{
+    width: 78%;
+}
+.products-show{
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.slideShow{
+    object-fit: cover;
+    overflow: hidden;
+    width:105%;
+}
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1.45, 1.45, 1.45);
+        transform: scale3d(1.45, 1.45, 1.45);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+  
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1.45, 1.45, 1.45);
+        transform: scale3d(1.45, 1.45, 1.45);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bulletin{
+    width: 100%;
+    display: block;
+    background-color:#fefbda;
+}
+.piece-cake{
+    width: 100%;
+    background: url(images/strawberry-cake-piece.jpg) right no-repeat;
+    background-size: 48%;
+    justify-content: right;
+    display: flex;
+    height: 53vh;
+}
+.board{
+    width:100%; 
+    margin-top:2%;
+}
+.board h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.board h1{
+    text-align: center;
+    font-size: 5.6rem;
+}
+.board-text{
+    width: 100%;
+    justify-content: center;
+    text-align:center ;
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
+.propaganda{
+    width: 100%;
+    background-color:#fefbda;
+    display: flex;
+    padding: 0 4%;
+    height: 55vh;
+}
+.magazine{
+    width: 50%;
+}
+.magazine h3{
+    font-size:1.4rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.magazine img{
+    width: 100%;
+}
+.comment{
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment h3{
+    font-size: 1.4rem;
+    padding-bottom: .8rem;
+    text-align: center;
+}
+.comment img{
+    width: 80%;
+}
+.propaganda2{
+    width: 100%;
+    height: 40vh;
+}
+.board2{
+   width: 100%;
+   height:38vh;
+}
+.propaganda2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.product-title{
+    width: 100%;
+    display:block;
+    margin-top:4%;
+}
+.title-text{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.4rem;
+}
+.title-text::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: .1vh;
+    margin:3vh auto;
+    background: #aaa095;
+} 
+.product-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-list{
+    width: 90%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    border-color:#aaa095;
+}
+.cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8{
+    width:45%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+.cake1 a, .cake2 a, .cake3 a, .cake4 a, .cake5 a, .cake6 a, .cake7 a, .cake8 a{
+    display: flex;
+    justify-content: center;
+}
+.cake-pic{
+    width:100%;
+    height: 38vh;
+}
+.cake1 h2, .cake2 h2, .cake3 h2, .cake4 h2, .cake5 h2, .cake6 h2, .cake7 h2, .cake8 h2{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+    text-align: center;
+    line-height: 4.5rem;
+}
+.cake1 ul, .cake2 ul, .cake3 ul, .cake4 ul, .cake5 ul, .cake6 ul, .cake7 ul, .cake8 ul{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 3rem;
+}
+.cake1 li, .cake2 li, .cake3 li, .cake4 li, .cake5 li, .cake6 li, .cake7 li, .cake8 li{
+    width: 30%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.cake-description{
+    width:100%;
+    margin-top: 2.5%;
+}
+.cake-description p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.cake-price{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    flex-wrap: wrap;
+    line-height: 4rem;
+}
+.putin-cart{
+    width:30%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    border:2px black solid;
+}
+.putin-cart a{
+    text-decoration:none;
+}
+.putin-cart img{
+    height: 22px;
+    margin: 7%;
+}
+.product-detail{
+    width:30%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    border:2px black solid;
+}
+.product-detail a{
+    text-decoration:none;
+}
+.product-detail img{
+    height: 20px;
+    margin: 8%;
+}
+.service-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.4rem;
+    margin-top: 4%;
+}
+.special-service{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.service-board{
+    width: 90%;
+    display: flex;
+    margin-top: 4%;
+}
+.service-pic{
+    width:45%;
+}
+.service-pic img{
+    width: 100%;
+}
+.service-text{
+    padding-left: 2rem;
+}
+.service-text h1{
+    font-size: 2.2rem;
+    line-height:3rem;
+    font-weight: bold;
+}
+.service-text p{
+    font-size: 1.3rem;
+    width: 80%;
+    text-align: center;
+    line-height: 3rem;
+}
+.service-text2 {
+    width: 100%;
+    margin-top:2%; 
+}
+.service-text2 p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    line-height:3rem;
+}
+.propaganda3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin-top:5%;
+}
+.board3{
+    width: 100%;
+    height: 40%;
+}
+.propaganda3 img{
+    object-fit: cover;
+    width: 100%;
+}
+.contact-method{
+    width: 100%;
+    justify-content:center;
+    margin-top: 3%;
+}
+.store-logo2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.store-logo2 img{
+    width: 30%;
+}
+.contact-method2{
+    width: 100%;
+    justify-content:center;
+}
+.contact-method2 p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height:4rem;
+}
+.share-community{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.share-community p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height:6rem;
+}
+.share-community a{
+    width: 2%;
+    margin:0% .6%;
+}
