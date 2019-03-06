@@ -223,6 +223,9 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    border-color:#aaa095;
 }
 .list-left{
     width:50%;
@@ -237,6 +240,7 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content:flex-end;
+    
 }
 .left-inner{
     width:100%;
