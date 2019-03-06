@@ -15,7 +15,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.87) ; 
-    
 }
 .menu{
     display: flex;
@@ -224,12 +223,39 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom-style: solid;
-    border-bottom-width:1px;
-    border-color:#aaa095;
+}
+.list-left{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+}
+.list-right{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-end;
+}
+.left-inner{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    margin-bottom: 6%;
+}
+.right-inner{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-end;
+    margin-bottom: 6%;
 }
 .cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8{
-    width:45%;
+    width:90%;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -264,6 +290,7 @@ nav{
 }
 .cake-description{
     width:100%;
+    height: 5vh;
     margin-top: 2.5%;
 }
 .cake-description p{
@@ -278,7 +305,7 @@ nav{
     line-height: 4rem;
 }
 .putin-cart{
-    width:30%;
+    width:25%;
     text-align: center;
     font-size: 1.3rem;
     line-height: 3rem;
@@ -292,7 +319,7 @@ nav{
     margin: 7%;
 }
 .product-detail{
-    width:30%;
+    width:25%;
     text-align: center;
     font-size: 1.3rem;
     line-height: 3rem;
@@ -303,7 +330,7 @@ nav{
 }
 .product-detail img{
     height: 20px;
-    margin: 8%;
+    margin: 9%;
 }
 .service-title{
     font-size: 1.6rem;
@@ -388,7 +415,7 @@ nav{
     justify-content:center;
 }
 .contact-method2 p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     line-height:4rem;
 }
