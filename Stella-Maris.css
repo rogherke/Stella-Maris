@@ -79,7 +79,7 @@ nav{
 .slideShow{
     object-fit: cover;
     overflow: hidden;
-    width:105%;
+    width:100%;
 }
 .pulse {
     -webkit-animation-name: pulse;
@@ -123,11 +123,11 @@ nav{
     background-size: 48%;
     justify-content: right;
     display: flex;
-    height: 53vh;
+    height: 60vh;
 }
 .board{
     width:100%; 
-    margin-top:2%;
+    margin-top:3%;
 }
 .board h2{
     text-align: center;
@@ -151,7 +151,7 @@ nav{
     background-color:#fefbda;
     display: flex;
     padding: 0 4%;
-    height: 55vh;
+    height: 68vh;
 }
 .magazine{
     width: 50%;
@@ -223,9 +223,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom-style: solid;
-    border-bottom-width:1px;
-    border-color:#aaa095;
+         
 }
 .list-left{
     width:50%;
@@ -334,7 +332,8 @@ nav{
 }
 .product-detail img{
     height: 20px;
-    margin: 9%;
+    margin-top: 9%;
+    margin-right: 7%;
 }
 .service-title{
     font-size: 1.6rem;
