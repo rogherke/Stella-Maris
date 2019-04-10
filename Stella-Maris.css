@@ -32,11 +32,22 @@ nav{
     margin: 4%;
     object-fit: cover;
 }
-/* ======================================= */
 .to-eat, .content, .aboutus, .shopping-cart {
     height: 3vh;
     width: 18%;
 }
+.to-eat a, .content a, .aboutus a, .shopping-cart a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration:none;
+}
+.to-eat img, .content img, .aboutus img, .shopping-cart img{
+    height: 2vh;
+    object-fit: cover;
+    margin-right:4%
+}
+/* ======================================= */
 @media screen and (max-width: 1024px) {
 .to-eat, .content, .aboutus, .shopping-cart{
     height: 3vh;
@@ -56,18 +67,6 @@ nav{
     }    
 }
 /* ======================================= */
-.to-eat a, .content a, .aboutus a, .shopping-cart a{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    text-decoration:none;
-}
-.to-eat img, .content img, .aboutus img, .shopping-cart img{
-    height: 2vh;
-    object-fit: cover;
-    margin-right:4%
-}
-/* ======================================= */
 .essential{
     width: 100%;
     height: auto;
@@ -75,80 +74,23 @@ nav{
     display: flex;
     margin: 6rem 0;
 }
-@media screen and (max-width: 768px) {
-.essential{
-    height:32vh;
-    margin: 5rem 0;
-    }    
-}
-@media screen and (max-width: 480px) {
-.essential{
-    height:43vh;
-    margin: 5rem 0;
-    }    
-}
-/* ======================================= */
 .store-brand{
     width: 22%;
     background:white;
 }
-@media screen and (max-width: 480px) {
-    .store-brand{
-        display: none;
-    }    
-}
-/* ======================================= */
 .store-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     height:76vh;
 }
-@media screen and (max-width: 1024px) {
-.store-logo{
-    height:35vh;
-    }    
-}
-@media screen and (max-width: 768px) {
-.store-logo{
-    height:30vh;
-    }    
-}
-@media screen and (max-width: 480px) {
-.store-logo{
-    height:20vh;
-    }    
-}
-/* ======================================= */
 .store-logo img{
     width: 180%;
     object-fit: cover;
 }
-@media screen and (max-width: 1024px) {
-.store-logo img{
-    width: 170%;
-    }    
-}
-@media screen and (max-width: 768px) {
-.store-logo img{
-    width: 160%;
-    }    
-}
-@media screen and (max-width: 480px) {
-.store-logo img{
-    display: none;
-    }    
-}
-/* ======================================= */
 .slide-Show{
     width: 78%;
 }
-@media screen and (max-width: 480px) {
-.slide-Show{
-    width: 100%;
-    }    
-}
-/* ======================================= */
 .products-show{
     width: 100%;
     z-index: 1;
@@ -159,7 +101,7 @@ nav{
     overflow: hidden;
     width:100%;
 }
-/* ======================================= */
+
 .pulse {
     -webkit-animation-name: pulse;
     animation-name: pulse;
@@ -191,24 +133,60 @@ nav{
     }
 }
 
-@media screen and (max-width: 768px) {
-    .pulse{
-    width: 100%;
+/* ======================================= */
+@media screen and (max-width: 1024px) {
+.store-logo{
+    height:35vh;
+    }    
+.store-logo img{
+    width: 170%;
     }    
 }
+@media screen and (max-width: 768px) {
+.essential{
+    height:32vh;
+    margin: 5rem 0;
+    }    
+.store-logo{
+    height:30vh;
+    }    
+.store-logo img{
+    width: 160%;
+    }    
+.pulse{
+    width: 100%;
+    }   
+}   
 @media screen and (max-width: 480px) {
-    .pulse{
+.store-brand{
+    display: none;
+    }    
+.essential{
+    height:43vh;
+    margin: 5rem 0;
+    }        
+.store-logo{
+    height:20vh;
+    }    
+.store-logo img{
+    display: none;
+    }    
+.slide-Show{
+    width: 100%;
+    }    
+.pulse{
     width: 100%;
     height: 50vh;
     }    
 }
 /* ======================================= */
+
 .bulletin{
     width: 100%;
     display: block;
     background-color:#fefbda;
 }
-/* ======================================= */
+
 .piece-cake{
     width: 100%;
     background: url(images/strawberry-cake-piece.jpg) right no-repeat;
@@ -217,6 +195,7 @@ nav{
     display: flex;
     height: 60vh;
 }
+/* ======================================= */
 @media screen and (max-width: 768px) {
 .piece-cake{
     height: 40vh;
@@ -305,17 +284,29 @@ nav{
     background-color:#fefbda;
     }    
 }
+@media screen and (max-width: 375px) {
+.propaganda{
+    height: 50vh;
+    background-color:#fefbda;
+    }    
+}   
 /* ======================================= */
 .magazine{
     width: 50%;
 }
 @media screen and (max-width: 480px) {
-    .magazine{
+.magazine{
     width:100%;
     margin-top: 12%;
     background-color:#fefbda;
     }    
 }
+@media screen and (max-width: 375px) {
+.magazine{
+    margin-top: 15%;
+    background-color:#fefbda;
+    }    
+}    
 /* ======================================= */
 .magazine h3{
     font-size:1.4rem;
@@ -425,7 +416,6 @@ nav{
     text-align: center;
     line-height: 2.4rem;
 }
-
 .title-text::after{
     content: "";
     display: block;
@@ -643,6 +633,21 @@ nav{
     margin:8% 8% 0 0;
     } 
 }    
+@media screen and (max-width: 375px) {
+.cake li{
+    width:35%;
+    }
+.cake-description {
+    height: 14vh;
+    }
+.product-detail{
+    font-size: .8rem;
+    }        
+.putin-cart{
+    font-size:.8rem;
+    }   
+}    
+/* ======================================= */ 
 .service-title{
     font-size: 1.6rem;
     font-weight: bold;
@@ -683,108 +688,85 @@ nav{
     text-align: center;
     line-height: 3rem;
 }
-@media screen and (max-width: 375px) {
-.cake li{
-    width:35%;
-    }
-.cake-description {
-    height: 14vh;
-    }
-.product-detail{
-    font-size: .8rem;
-    }    
-.putin-cart{
-    font-size:.8rem;
-    }   
-}    
-/* ======================================= */
-@media screen and (max-width: 768px) {
-    .service-pic img{
-        height: 15vh;
-        }    
-    .service-text{
-        width:75%;
-        }    
-    .service-text h1{
-        font-size: 1.3rem;
-        }    
-    .service-text p{
-            width: 90%;
-            font-size: 1.2rem;
-            line-height: 2rem;
-        }  
-    } 
-@media screen and (max-width: 480px) {
-    .service-board{
-        flex-wrap: wrap;
-        }
-    .service-pic{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        }
-    .service-pic img{
-        height: 16vh;
-        width: auto;
-        }
-    .service-text{
-        width:100%;
-        }    
-    .service-text h1{
-        font-size: 1.2rem;
-        line-height:2rem;
-        }  
-    .service-text p{
-        width: 90%;
-        font-size: .9rem;
-        line-height: 2rem;
-        }   
-}
-@media screen and (max-width:375px) {
-    .service-text{
-        padding: 2%;
-    }
-    .service-text h1{
-        font-size: 1.4rem;
-    }
-    .service-text p{
-        display: none;
-    }
-/* ======================================= */
 .service-text2 {
     width: 100%;
     margin-top:2%; 
 }
-@media screen and (max-width: 768px) {
-.service-text2{
-    margin-top:5%; 
-    }    
-}
-@media screen and (max-width: 480px) {
-.service-text2{
-    margin-top:-5%; 
-    }    
-}
-/* ======================================= */ 
 .service-text2 p{
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
     line-height:3rem;
 }
+/* ======================================= */
 @media screen and (max-width: 768px) {
+.service-pic img{
+    height: 15vh;
+    }    
+.service-text{
+    width:75%;
+    }    
+.service-text h1{
+    font-size: 1.3rem;
+    }    
+.service-text p{
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    }  
+.service-text2{
+    margin-top:5%; 
+    }    
 .service-text2 p{
     font-size: 1.3rem; 
     line-height:3.3rem;
-    }    
+    }   
 }
 @media screen and (max-width: 480px) {
+.service-board{
+    flex-wrap: wrap;
+    }
+.service-pic{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    }
+.service-pic img{
+    height: 16vh;
+    width: auto;
+    }
+.service-text{
+    width:100%;
+    }    
+.service-text h1{
+    font-size: 1.2rem;
+    line-height:2rem;
+    }  
+.service-text p{
+    width: 90%;
+    font-size: .9rem;
+    line-height: 2rem;
+    }   
+.service-text2{
+    margin-top:-5%; 
+    }  
 .service-text2 p{
     font-size: .9rem; 
     line-height:2rem;
-    }    
+    }  
 }
-/* ======================================= */ 
+@media screen and (max-width:375px) {
+.service-text{
+    padding: 2%;
+    }
+.service-text h1{
+    font-size: 1.4rem;
+    }
+.service-text p{
+    display: none;    
+    }
+}   
+/* ======================================= */
 .propaganda3{
     width: 100%;
     height: 40%;
@@ -811,21 +793,9 @@ nav{
     align-items: center;
     justify-content:center;
 }
-/* ======================================= */
 .store-logo2 img{
     width: 30%;
 }
-@media screen and (max-width: 768px) {
-.store-logo2 img{
-    width: 50%;
-    }    
-}
-@media screen and (max-width: 480px) {
-.store-logo2 img{
-    width: 70%;
-    }    
-}
-/* ======================================= */
 .contact-method2{
     width: 100%;
     justify-content:center;
@@ -841,19 +811,33 @@ nav{
     justify-content:center;
     align-items: center;
 }
-/* ======================================= */
 .share-community p{
     font-size: 1.3rem;
     text-align: center;
     line-height:6rem;
 }
+.share-community a{
+    width: 2%;
+    margin:0% .6%;
+}
+/* ======================================= */
 @media screen and (max-width: 768px) {
+.store-logo2 img{
+    width: 50%;
+    } 
 .share-community p{
     line-height:5rem;
     font-size: 1.5rem;
+    }  
+.share-community a{
+    width: 3%;
+    margin:0% 1%;
     }    
 }
 @media screen and (max-width: 480px) {
+.store-logo2 img{
+    width: 70%;
+    } 
 .contact-method2 p{
     font-size: 1rem;
     line-height: 2rem;
@@ -862,19 +846,6 @@ nav{
     line-height:5rem;
     font-size: 1.3rem;
     }    
-}
-/* ======================================= */
-.share-community a{
-    width: 2%;
-    margin:0% .6%;
-}
-@media screen and (max-width: 768px) {
-.share-community a{
-    width: 3%;
-    margin:0% 1%;
-    }    
-}
-@media screen and (max-width: 480px) {
 .share-community a{
     width: 5%;
     margin:0% 1%;
