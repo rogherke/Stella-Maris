@@ -32,10 +32,30 @@ nav{
     margin: 4%;
     object-fit: cover;
 }
+/* ======================================= */
 .to-eat, .content, .aboutus, .shopping-cart {
     height: 3vh;
-    width: 15%;
+    width: 18%;
 }
+@media screen and (max-width: 1024px) {
+.to-eat, .content, .aboutus, .shopping-cart{
+    height: 3vh;
+    width: 24%;
+    }    
+}
+@media screen and (max-width: 768px) {
+.to-eat, .content, .aboutus, .shopping-cart{
+    height: 3vh;
+    width: 24%;
+    font-size: .9rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.to-eat, .content, .aboutus, .shopping-cart{
+    display: none;
+    }    
+}
+/* ======================================= */
 .to-eat a, .content a, .aboutus a, .shopping-cart a{
     align-items: center;
     justify-content: center;
@@ -47,30 +67,88 @@ nav{
     object-fit: cover;
     margin-right:4%
 }
+/* ======================================= */
 .essential{
     width: 100%;
-    height: 850px;
+    height: auto;
     background:white;
     display: flex;
     margin: 6rem 0;
 }
+@media screen and (max-width: 768px) {
+.essential{
+    height:32vh;
+    margin: 5rem 0;
+    }    
+}
+@media screen and (max-width: 480px) {
+.essential{
+    height:43vh;
+    margin: 5rem 0;
+    }    
+}
+/* ======================================= */
 .store-brand{
     width: 22%;
     background:white;
 }
+@media screen and (max-width: 480px) {
+    .store-brand{
+        display: none;
+    }    
+}
+/* ======================================= */
 .store-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     height:76vh;
 }
+@media screen and (max-width: 1024px) {
+.store-logo{
+    height:35vh;
+    }    
+}
+@media screen and (max-width: 768px) {
+.store-logo{
+    height:30vh;
+    }    
+}
+@media screen and (max-width: 480px) {
+.store-logo{
+    height:20vh;
+    }    
+}
+/* ======================================= */
 .store-logo img{
     width: 180%;
     object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
+.store-logo img{
+    width: 170%;
+    }    
+}
+@media screen and (max-width: 768px) {
+.store-logo img{
+    width: 160%;
+    }    
+}
+@media screen and (max-width: 480px) {
+.store-logo img{
+    display: none;
+    }    
+}
+/* ======================================= */
 .slide-Show{
     width: 78%;
 }
+@media screen and (max-width: 480px) {
+.slide-Show{
+    width: 100%;
+    }    
+}
+/* ======================================= */
 .products-show{
     width: 100%;
     z-index: 1;
@@ -81,6 +159,7 @@ nav{
     overflow: hidden;
     width:100%;
 }
+/* ======================================= */
 .pulse {
     -webkit-animation-name: pulse;
     animation-name: pulse;
@@ -112,11 +191,24 @@ nav{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .pulse{
+    width: 100%;
+    }    
+}
+@media screen and (max-width: 480px) {
+    .pulse{
+    width: 100%;
+    height: 50vh;
+    }    
+}
+/* ======================================= */
 .bulletin{
     width: 100%;
     display: block;
     background-color:#fefbda;
 }
+/* ======================================= */
 .piece-cake{
     width: 100%;
     background: url(images/strawberry-cake-piece.jpg) right no-repeat;
@@ -125,19 +217,55 @@ nav{
     display: flex;
     height: 60vh;
 }
+@media screen and (max-width: 768px) {
+.piece-cake{
+    height: 40vh;
+    background-size: 65%;
+    }    
+}
+@media screen and (max-width: 480px) {
+.piece-cake{
+    height: 35vh;
+    background-size: 90%;
+    }    
+}
+/* ======================================= */
 .board{
     width:100%; 
-    margin-top:3%;
+    margin-top:4%;
 }
+/* ======================================= */
 .board h2{
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+.board h2{
+    font-size: 1.6rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.board h2{
+    font-size: .9rem;    
+    }    
+}
+/* ======================================= */
 .board h1{
     text-align: center;
     font-size: 5.6rem;
 }
+@media screen and (max-width: 768px) {
+.board h1{
+    font-size: 3rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.board h1{
+    font-size: 2rem;    
+    }    
+}
+/* ======================================= */
 .board-text{
     width: 100%;
     justify-content: center;
@@ -146,6 +274,18 @@ nav{
     font-size: 1.2rem;
     line-height: 2.8rem;
 }
+@media screen and (max-width: 768px) {
+    .board-text{
+    font-size: 1.2rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+    .board-text{
+    font-size: .9rem;   
+    line-height: 1.9rem; 
+    }    
+}
+/* ======================================= */
 .propaganda{
     width: 100%;
     background-color:#fefbda;
@@ -153,17 +293,52 @@ nav{
     padding: 0 4%;
     height: 68vh;
 }
+@media screen and (max-width: 768px) {
+.propaganda{
+    height: 33vh;
+    }    
+}
+@media screen and (max-width: 480px) {
+.propaganda{
+    flex-direction: column;
+    height: 48vh;
+    background-color:#fefbda;
+    }    
+}
+/* ======================================= */
 .magazine{
     width: 50%;
 }
+@media screen and (max-width: 480px) {
+    .magazine{
+    width:100%;
+    margin-top: 12%;
+    background-color:#fefbda;
+    }    
+}
+/* ======================================= */
 .magazine h3{
     font-size:1.4rem;
     padding-bottom: 3rem;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+.magazine h3{
+    font-size:1.5rem;
+    padding-bottom: 2rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.magazine h3{
+    font-size:1rem;
+    font-weight: bold;
+    }    
+}
+/* ======================================= */
 .magazine img{
     width: 100%;
 }
+/* ======================================= */
 .comment{
     width: 50%;
     justify-content: flex-start;
@@ -171,27 +346,74 @@ nav{
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 480px) {
+.comment{
+    display: none;
+    }    
+}
+/* ======================================= */
 .comment h3{
     font-size: 1.4rem;
     padding-bottom: .8rem;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+.comment h3{
+    font-size:1.5rem;
+    padding-bottom: 2rem;
+    }    
+}
+/* ======================================= */
 .comment img{
     width: 80%;
 }
+@media screen and (max-width: 480px) {
+.comment img{
+    width:85%;  
+    }    
+}
+/* ======================================= */
 .propaganda2{
     width: 100%;
     height: 40vh;
 }
+@media screen and (max-width: 768px) {
+.propaganda2{
+    height: 30vh;   
+    }    
+}
+@media screen and (max-width: 480px) {
+.propaganda2{
+    height: 24vh;    
+    }    
+}
+/* ======================================= */
 .board2{
    width: 100%;
    height:38vh;
 }
+@media screen and (max-width: 480px) {
+.board2{
+    height: 35vh;
+    }    
+}
+/* ======================================= */
 .propaganda2 img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 768px) {
+.propaganda2 img{
+    height:67%;      
+    }    
+}
+@media screen and (max-width: 480px) {
+.propaganda2 img{
+    height: 50%;  
+    }    
+}
+/* ======================================= */
 .product-title{
     width: 100%;
     display:block;
@@ -203,11 +425,12 @@ nav{
     text-align: center;
     line-height: 2.4rem;
 }
+
 .title-text::after{
     content: "";
     display: block;
     width: 90%;
-    height: .1vh;
+    height: .2vh;
     margin:3vh auto;
     background: #aaa095;
 } 
@@ -223,7 +446,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-         
+    border-bottom: 2px #aaa095 solid; 
 }
 .list-left{
     width:50%;
@@ -238,7 +461,6 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content:flex-end;
-    
 }
 .left-inner{
     width:100%;
@@ -256,7 +478,7 @@ nav{
     justify-content:flex-end;
     margin-bottom: 6%;
 }
-.cake1, .cake2, .cake3, .cake4, .cake5, .cake6, .cake7, .cake8{
+.cake{
     width:90%;
     margin-top: 2rem;
     display: flex;
@@ -264,7 +486,7 @@ nav{
     align-items: center;
     justify-content:space-around;
 }
-.cake1 a, .cake2 a, .cake3 a, .cake4 a, .cake5 a, .cake6 a, .cake7 a, .cake8 a{
+.cake a{
     display: flex;
     justify-content: center;
 }
@@ -272,20 +494,20 @@ nav{
     width:100%;
     height: 38vh;
 }
-.cake1 h2, .cake2 h2, .cake3 h2, .cake4 h2, .cake5 h2, .cake6 h2, .cake7 h2, .cake8 h2{
+.cake h2{
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: .5rem;
     text-align: center;
     line-height: 4.5rem;
 }
-.cake1 ul, .cake2 ul, .cake3 ul, .cake4 ul, .cake5 ul, .cake6 ul, .cake7 ul, .cake8 ul{
+.cake ul{
     width:100%;
     display: flex;
     justify-content: space-around;
     line-height: 3rem;
 }
-.cake1 li, .cake2 li, .cake3 li, .cake4 li, .cake5 li, .cake6 li, .cake7 li, .cake8 li{
+.cake li{
     width: 30%;
     font-size: 1.2rem;
     text-align: center;
@@ -316,31 +538,118 @@ nav{
 .putin-cart a{
     text-decoration:none;
 }
+
 .putin-cart img{
     height: 22px;
     margin: 7%;
-}
+} 
 .product-detail{
     width:25%;
     text-align: center;
     font-size: 1.3rem;
     line-height: 3rem;
     border:2px black solid;
-}
+}  
 .product-detail a{
     text-decoration:none;
 }
 .product-detail img{
     height: 20px;
-    margin-top: 9%;
-    margin-right: 7%;
+    margin: 9% 8% 0 0;
 }
+/* ======================================= */ 
+@media screen and (max-width: 768px) {
+.cake-pic{
+    height: 26vh;    
+    }    
+.cake h2{
+    font-size: 1.5rem;   
+    }    
+.cake-description{
+    height: 9vh;  
+    }    
+.cake-description p{
+    font-size: 1.3rem; 
+    line-height: 1.7rem;  
+    }
+.cake-price{
+    font-size: 1.2rem; 
+    line-height: 5rem;  
+    }  
+.putin-cart{
+    width:35%;
+    font-size:.8rem;
+    }   
+.putin-cart img{
+    margin:12% 3%;
+    } 
+.product-detail{
+    width:34%;
+    font-size:.8rem;
+    } 
+.product-detail img{
+    height: 17px;
+    margin:15% 8% 0 0;
+    }
+}
+@media screen and (max-width: 480px) {
+.item-list{
+    flex-direction: column;
+    }    
+.list-left , .list-right{
+    width: 100%;
+    justify-content:center;
+    }    
+.left-inner , .right-inner{
+    justify-content:center;
+    }       
+.cake-pic{
+    height:50%;  
+    }    
+.cake h2{
+    font-size: 1.3rem;
+    }    
+.cake li{
+    width:32%;
+    font-size: 1rem;
+    }
+.cake-description {
+    height: 10vh;
+    }        
+.cake-description p{
+    font-size: 1rem; 
+    line-height: 1.3rem;  
+    } 
+.cake-price{
+    font-size: 1.3rem; 
+    line-height: 1.3rem;  
+    } 
+.putin-cart{
+    font-size: 1rem; 
+    line-height: 2rem;  
+    height: 5vh;
+    }
+.putin-cart img{
+    margin:4% 3%;
+    }
+.product-detail{
+    margin:12% 3%;
+    font-size: 1rem; 
+    line-height: 2rem;  
+    height: 5vh;
+    }  
+.product-detail img{
+    height: 15px;
+    margin:8% 8% 0 0;
+    } 
+}    
 .service-title{
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
     line-height: 2.4rem;
     margin-top: 4%;
+    border-style:1px
 }
 .special-service{
     width:100%;
@@ -369,21 +678,113 @@ nav{
     font-weight: bold;
 }
 .service-text p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     width: 80%;
     text-align: center;
     line-height: 3rem;
 }
+@media screen and (max-width: 375px) {
+.cake li{
+    width:35%;
+    }
+.cake-description {
+    height: 14vh;
+    }
+.product-detail{
+    font-size: .8rem;
+    }    
+.putin-cart{
+    font-size:.8rem;
+    }   
+}    
+/* ======================================= */
+@media screen and (max-width: 768px) {
+    .service-pic img{
+        height: 15vh;
+        }    
+    .service-text{
+        width:75%;
+        }    
+    .service-text h1{
+        font-size: 1.3rem;
+        }    
+    .service-text p{
+            width: 90%;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }  
+    } 
+@media screen and (max-width: 480px) {
+    .service-board{
+        flex-wrap: wrap;
+        }
+    .service-pic{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        }
+    .service-pic img{
+        height: 16vh;
+        width: auto;
+        }
+    .service-text{
+        width:100%;
+        }    
+    .service-text h1{
+        font-size: 1.2rem;
+        line-height:2rem;
+        }  
+    .service-text p{
+        width: 90%;
+        font-size: .9rem;
+        line-height: 2rem;
+        }   
+}
+@media screen and (max-width:375px) {
+    .service-text{
+        padding: 2%;
+    }
+    .service-text h1{
+        font-size: 1.4rem;
+    }
+    .service-text p{
+        display: none;
+    }
+/* ======================================= */
 .service-text2 {
     width: 100%;
     margin-top:2%; 
 }
+@media screen and (max-width: 768px) {
+.service-text2{
+    margin-top:5%; 
+    }    
+}
+@media screen and (max-width: 480px) {
+.service-text2{
+    margin-top:-5%; 
+    }    
+}
+/* ======================================= */ 
 .service-text2 p{
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
     line-height:3rem;
 }
+@media screen and (max-width: 768px) {
+.service-text2 p{
+    font-size: 1.3rem; 
+    line-height:3.3rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.service-text2 p{
+    font-size: .9rem; 
+    line-height:2rem;
+    }    
+}
+/* ======================================= */ 
 .propaganda3{
     width: 100%;
     height: 40%;
@@ -410,9 +811,21 @@ nav{
     align-items: center;
     justify-content:center;
 }
+/* ======================================= */
 .store-logo2 img{
     width: 30%;
 }
+@media screen and (max-width: 768px) {
+.store-logo2 img{
+    width: 50%;
+    }    
+}
+@media screen and (max-width: 480px) {
+.store-logo2 img{
+    width: 70%;
+    }    
+}
+/* ======================================= */
 .contact-method2{
     width: 100%;
     justify-content:center;
@@ -428,12 +841,42 @@ nav{
     justify-content:center;
     align-items: center;
 }
+/* ======================================= */
 .share-community p{
     font-size: 1.3rem;
     text-align: center;
     line-height:6rem;
 }
+@media screen and (max-width: 768px) {
+.share-community p{
+    line-height:5rem;
+    font-size: 1.5rem;
+    }    
+}
+@media screen and (max-width: 480px) {
+.contact-method2 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    }
+.share-community p{
+    line-height:5rem;
+    font-size: 1.3rem;
+    }    
+}
+/* ======================================= */
 .share-community a{
     width: 2%;
     margin:0% .6%;
+}
+@media screen and (max-width: 768px) {
+.share-community a{
+    width: 3%;
+    margin:0% 1%;
+    }    
+}
+@media screen and (max-width: 480px) {
+.share-community a{
+    width: 5%;
+    margin:0% 1%;
+    }    
 }
