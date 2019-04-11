@@ -180,13 +180,11 @@ nav{
     }    
 }
 /* ======================================= */
-
 .bulletin{
     width: 100%;
     display: block;
     background-color:#fefbda;
 }
-
 .piece-cake{
     width: 100%;
     background: url(images/strawberry-cake-piece.jpg) right no-repeat;
@@ -195,56 +193,19 @@ nav{
     display: flex;
     height: 60vh;
 }
-/* ======================================= */
-@media screen and (max-width: 768px) {
-.piece-cake{
-    height: 40vh;
-    background-size: 65%;
-    }    
-}
-@media screen and (max-width: 480px) {
-.piece-cake{
-    height: 35vh;
-    background-size: 90%;
-    }    
-}
-/* ======================================= */
 .board{
     width:100%; 
     margin-top:4%;
 }
-/* ======================================= */
 .board h2{
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
 }
-@media screen and (max-width: 768px) {
-.board h2{
-    font-size: 1.6rem;
-    }    
-}
-@media screen and (max-width: 480px) {
-.board h2{
-    font-size: .9rem;    
-    }    
-}
-/* ======================================= */
 .board h1{
     text-align: center;
     font-size: 5.6rem;
 }
-@media screen and (max-width: 768px) {
-.board h1{
-    font-size: 3rem;
-    }    
-}
-@media screen and (max-width: 480px) {
-.board h1{
-    font-size: 2rem;    
-    }    
-}
-/* ======================================= */
 .board-text{
     width: 100%;
     justify-content: center;
@@ -253,13 +214,34 @@ nav{
     font-size: 1.2rem;
     line-height: 2.8rem;
 }
+/* ======================================= */
 @media screen and (max-width: 768px) {
-    .board-text{
-    font-size: 1.2rem;
+.piece-cake{
+    height: 40vh;
+    background-size: 65%;
     }    
+.board h2{
+    font-size: 1.6rem;
+    }   
+.board h1{
+    font-size: 3rem;
+    }  
+.board-text{
+    font-size: 1.2rem;
+    }   
 }
 @media screen and (max-width: 480px) {
-    .board-text{
+.piece-cake{
+    height: 35vh;
+    background-size: 90%;
+    }    
+.board h2{
+    font-size: .9rem;    
+    }    
+.board h1{
+    font-size: 2rem;    
+    }   
+.board-text{
     font-size: .9rem;   
     line-height: 1.9rem; 
     }    
@@ -272,64 +254,17 @@ nav{
     padding: 0 4%;
     height: 68vh;
 }
-@media screen and (max-width: 768px) {
-.propaganda{
-    height: 33vh;
-    }    
-}
-@media screen and (max-width: 480px) {
-.propaganda{
-    flex-direction: column;
-    height: 48vh;
-    background-color:#fefbda;
-    }    
-}
-@media screen and (max-width: 375px) {
-.propaganda{
-    height: 50vh;
-    background-color:#fefbda;
-    }    
-}   
-/* ======================================= */
 .magazine{
     width: 50%;
 }
-@media screen and (max-width: 480px) {
-.magazine{
-    width:100%;
-    margin-top: 12%;
-    background-color:#fefbda;
-    }    
-}
-@media screen and (max-width: 375px) {
-.magazine{
-    margin-top: 15%;
-    background-color:#fefbda;
-    }    
-}    
-/* ======================================= */
 .magazine h3{
     font-size:1.4rem;
     padding-bottom: 3rem;
     text-align: center;
 }
-@media screen and (max-width: 768px) {
-.magazine h3{
-    font-size:1.5rem;
-    padding-bottom: 2rem;
-    }    
-}
-@media screen and (max-width: 480px) {
-.magazine h3{
-    font-size:1rem;
-    font-weight: bold;
-    }    
-}
-/* ======================================= */
 .magazine img{
     width: 100%;
 }
-/* ======================================= */
 .comment{
     width: 50%;
     justify-content: flex-start;
@@ -337,73 +272,88 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-@media screen and (max-width: 480px) {
-.comment{
-    display: none;
-    }    
-}
-/* ======================================= */
 .comment h3{
     font-size: 1.4rem;
     padding-bottom: .8rem;
     text-align: center;
 }
-@media screen and (max-width: 768px) {
-.comment h3{
-    font-size:1.5rem;
-    padding-bottom: 2rem;
-    }    
-}
-/* ======================================= */
 .comment img{
     width: 80%;
 }
-@media screen and (max-width: 480px) {
-.comment img{
-    width:85%;  
-    }    
-}
-/* ======================================= */
 .propaganda2{
     width: 100%;
     height: 40vh;
 }
-@media screen and (max-width: 768px) {
-.propaganda2{
-    height: 30vh;   
-    }    
-}
-@media screen and (max-width: 480px) {
-.propaganda2{
-    height: 24vh;    
-    }    
-}
-/* ======================================= */
 .board2{
    width: 100%;
    height:38vh;
 }
-@media screen and (max-width: 480px) {
-.board2{
-    height: 35vh;
-    }    
-}
-/* ======================================= */
 .propaganda2 img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+/* ======================================= */
 @media screen and (max-width: 768px) {
+.propaganda{
+    height: 33vh;
+    }    
+.magazine h3{
+    font-size:1.5rem;
+    padding-bottom: 2rem;
+    }    
+.comment h3{
+    font-size:1.5rem;
+    padding-bottom: 2rem;
+    }  
+.propaganda2{
+    height: 30vh;   
+    }    
 .propaganda2 img{
     height:67%;      
-    }    
+    } 
 }
 @media screen and (max-width: 480px) {
+.propaganda{
+    flex-direction: column;
+    height: 48vh;
+    background-color:#fefbda;
+    }    
+.magazine{
+    width:100%;
+    margin-top: 12%;
+    background-color:#fefbda;
+    }    
+.magazine h3{
+    font-size:1rem;
+    font-weight: bold;
+    }     
+.comment{
+    display: none;
+    }  
+.comment img{
+    width:85%;  
+    }  
+.propaganda2{
+    height: 24vh;    
+    }    
+.board2{
+    height: 35vh;
+    }    
 .propaganda2 img{
     height: 50%;  
     }    
 }
+@media screen and (max-width: 375px) {
+.propaganda{
+    height: 50vh;
+    background-color:#fefbda;
+    }    
+.magazine{
+    margin-top: 15%;
+    background-color:#fefbda;
+    }   
+}   
 /* ======================================= */
 .product-title{
     width: 100%;
@@ -528,7 +478,6 @@ nav{
 .putin-cart a{
     text-decoration:none;
 }
-
 .putin-cart img{
     height: 22px;
     margin: 7%;
@@ -548,6 +497,64 @@ nav{
     margin: 9% 8% 0 0;
 }
 /* ======================================= */ 
+@media screen and (max-width: 1024px) {
+.piece-cake{
+    background-size: 65%;
+    height: 38vh;
+    }
+.propaganda{
+    height: 32vh;
+    }    
+.propaganda2{
+    height: 30vh;
+    }    
+.board2{
+    height:25vh;
+    }    
+.title-text{
+    font-size:2.2rem;
+    line-height: 3rem;
+    }
+.cake-pic{
+    height: 25vh;
+    }
+.cake li{
+    width:32%;
+    font-size: 1.2rem;
+    }
+.cake-description{
+    margin-top: 5%;
+    height: 8vh;
+    }    
+.cake-description p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    }  
+.cake-price {
+    font-size: 1.7rem;
+    }
+.putin-cart{
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+    height: 3vh;
+    width:32%;
+    }
+.putin-cart img{
+    margin:5% 3%;
+    height:2vh;
+    }
+.product-detail{
+    margin:12% 3%;
+    font-size: 1.1rem; 
+    line-height: 2.4rem;  
+    height: 3vh;
+    width:30%; 
+    }  
+.product-detail img{
+    height: 1.5vh;
+    margin:8% 8% 0 0;
+    }
+}
 @media screen and (max-width: 768px) {
 .cake-pic{
     height: 26vh;    
@@ -699,6 +706,24 @@ nav{
     line-height:3rem;
 }
 /* ======================================= */
+@media screen and (max-width: 1024px) {
+.service-title{
+    font-size: 2.2rem;
+    line-height: 3rem;
+    }    
+.service-pic{
+    width: 55%;
+    }
+.service-pic img{
+    height: 10vh;
+    }
+.service-text h1{
+    font-size: 2rem;
+    }
+.service-text p{
+    width:78%;
+    }
+}    
 @media screen and (max-width: 768px) {
 .service-pic img{
     height: 15vh;
@@ -748,7 +773,7 @@ nav{
     line-height: 2rem;
     }   
 .service-text2{
-    margin-top:-5%; 
+    margin-top:5%; 
     }  
 .service-text2 p{
     font-size: .9rem; 
@@ -821,6 +846,11 @@ nav{
     margin:0% .6%;
 }
 /* ======================================= */
+@media screen and (max-width: 1024px) {
+.store-logo2 img {
+    width: 50%;
+    }    
+}
 @media screen and (max-width: 768px) {
 .store-logo2 img{
     width: 50%;
