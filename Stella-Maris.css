@@ -8,14 +8,93 @@ body{
 }    
 nav{
     width: 100%;
-    z-index:2;
     top: 0;
     position:fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.87) ; 
+    z-index:2;
 }
+.hamburger-menu{
+    position: relative;
+    display: none;
+    border: none;
+    top: 5%;
+    left: 10%;
+    z-index: 3;
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+.hamburger-menu input{
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    z-index: 5;
+}
+.hamburger-menu input:checked ~ .line{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+.hamburger-menu input:checked ~ .line:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0, 0);
+}
+.hamburger-menu input:checked ~ .line:nth-last-child(2){
+    transform: rotate(-45deg) translate(-1px, -2px);
+}
+
+.line{
+    width: 35px;
+    height: 4px;
+    background-color:black;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    margin:5px auto;
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}    
+.line:first-child{
+    transform-origin: 0% 0%;
+}
+.line:first-child(2){
+    transform-origin: 0% 100%;
+}
+
+#menu-toggle{
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    left: 100px;
+    display: none;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s 
+                cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu-toggle a{
+    display: none
+}
+#menu-toggle a:hover{
+    color: red;
+}
+#menu-toggle li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
 .menu{
     display: flex;
     width: 100%;
@@ -25,7 +104,6 @@ nav{
 }
 .logo-icon{
     width: 50%;
-    
 }
 .logo-icon img{
     height: 50px;
@@ -62,6 +140,13 @@ nav{
     }    
 }
 @media screen and (max-width: 480px) {
+.hamburger-menu{
+    margin-right: 15%;
+    display: block;
+}
+.menu{
+    display: none;
+}
 .to-eat, .content, .aboutus, .shopping-cart{
     display: none;
     }    
@@ -215,9 +300,15 @@ nav{
     line-height: 2.8rem;
 }
 /* ======================================= */
+@media screen and (max-width: 1024px) {
+.piece-cake{
+    background-size: 65%;
+    height: 38vh;
+    }
+}
 @media screen and (max-width: 768px) {
 .piece-cake{
-    height: 40vh;
+    height: 50vh;
     background-size: 65%;
     }    
 .board h2{
@@ -294,9 +385,20 @@ nav{
     height: 100%;
 }
 /* ======================================= */
+@media screen and (max-width: 1024px) {
+.propaganda{
+    height: 32vh;
+    }    
+.propaganda2{
+    height: 30vh;
+    }    
+.board2{
+    height:25vh;
+    }  
+}      
 @media screen and (max-width: 768px) {
 .propaganda{
-    height: 33vh;
+    height: 40vh;
     }    
 .magazine h3{
     font-size:1.5rem;
@@ -346,13 +448,16 @@ nav{
 }
 @media screen and (max-width: 375px) {
 .propaganda{
-    height: 50vh;
+    height: 48vh;
     background-color:#fefbda;
     }    
 .magazine{
     margin-top: 15%;
     background-color:#fefbda;
     }   
+.board2{
+    height:30vh;
+    }  
 }   
 /* ======================================= */
 .product-title{
@@ -498,19 +603,6 @@ nav{
 }
 /* ======================================= */ 
 @media screen and (max-width: 1024px) {
-.piece-cake{
-    background-size: 65%;
-    height: 38vh;
-    }
-.propaganda{
-    height: 32vh;
-    }    
-.propaganda2{
-    height: 30vh;
-    }    
-.board2{
-    height:25vh;
-    }    
 .title-text{
     font-size:2.2rem;
     line-height: 3rem;
@@ -628,6 +720,7 @@ nav{
     }
 .putin-cart img{
     margin:4% 3%;
+    height: 3vh;
     }
 .product-detail{
     margin:12% 3%;
@@ -649,10 +742,17 @@ nav{
     }
 .product-detail{
     font-size: .8rem;
+    line-height: 1.8rem;
+    height: 4vh;
     }        
 .putin-cart{
     font-size:.8rem;
+    line-height: 1.8rem;
+    height: 4vh;
     }   
+.putin-cart img{
+    height: 2.5vh;
+    }
 }    
 /* ======================================= */ 
 .service-title{
