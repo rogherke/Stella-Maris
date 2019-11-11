@@ -592,6 +592,7 @@ nav{
     font-size: 1.3rem;
     line-height: 3rem;
     border:2px black solid;
+    border-radius: 15px ;
 }
 .putin-cart a{
     text-decoration:none;
@@ -606,6 +607,7 @@ nav{
     font-size: 1.3rem;
     line-height: 3rem;
     border:2px black solid;
+    border-radius: 15px;
 }  
 .product-detail a{
     text-decoration:none;
