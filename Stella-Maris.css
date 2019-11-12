@@ -597,6 +597,9 @@ nav{
 .putin-cart a{
     text-decoration:none;
 }
+.putin-cart a:hover{
+    color: red;
+}
 .putin-cart img{
     height: 22px;
     /*margin: 7%;*/
@@ -613,8 +616,12 @@ nav{
     text-decoration:none;
     width:100%;
 }
+.product-detail a:hover{
+    color: red;
+}
 .product-detail img{
     height: 20px;
+    margin-right:4px;
 }
 /* ======================================= */ 
 @media screen and (max-width: 1024px) {
@@ -656,7 +663,6 @@ nav{
     }  
 .product-detail img{
     height: 1.5vh;
-    padding: 0 5% 0 0;
     }
 }
 @media screen and (max-width: 768px) {
